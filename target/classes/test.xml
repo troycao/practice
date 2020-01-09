@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration  PUBLIC
+        "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration><!-- classPathEntry:数据库的JDBC驱动-->
+    <classPathEntry location="D:\mybatis-generator-core-1.3.1\lib\sqljdbc4.jar"/>
+    <context id="DB2Tables" targetRuntime="MyBatis3"><!-- 去除自动生成的注释 -->
+        <commentGenerator>
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>
+        <jdbcConnection driverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+                        connectionURL="jdbc:sqlserver://localhost:1433; DatabaseName=DBAuthority" userId="sa"
+                        password="sunyan"></jdbcConnection>
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver><!-- targetProject:自动生成代码的位置 -->
+        <javaModelGenerator targetPackage="com.firstLink.model" targetProject="F:\testDemo\src\">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+        <sqlMapGenerator targetPackage="com.firstLink.mappers" targetProject="F:\testDemo\src\">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.firstLink.dao" targetProject="F:\testDemo\src\">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator><!-- tableName:用于自动生成代码的数据库表；domainObjectName:对应于数据库表的javaBean类名 -->
+        <table tableName="NI_Role" domainObjectName="NiRole"></table>
+        <table tableName="NI_Menu" domainObjectName="NiMenu"></table>
+        <table tableName="NI_Module" domainObjectName="NiModule"></table>
+        <table tableName="NI_User" domainObjectName="NiUser"></table>
+        <table tableName="NI_UserRole_Relation" domainObjectName="NiUserRoleRelation"></table>
+    </context>
+</generatorConfiguration>

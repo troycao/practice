@@ -1,0 +1,11 @@
+package com.troy.practice.posp;
+
+import java.net.Socket;
+
+public class SocketTest {
+
+    public static void main(String[] args) {
+        String message = "100110006680420519062237810362121422000000000750.01        123456781234567822222222222285429007349264466804205U32019090609524812120118605081203  T11121.389767+31.249414";
+    }
+
+}
