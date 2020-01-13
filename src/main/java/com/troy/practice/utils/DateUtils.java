@@ -1,4 +1,4 @@
-package com.troy.practice.Utils;
+package com.troy.practice.utils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

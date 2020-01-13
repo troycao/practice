@@ -1,4 +1,4 @@
-package com.troy.practice.Utils;
+package com.troy.practice.utils;
 
 public class MapDistanceUtil {
 
