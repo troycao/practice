@@ -1,4 +1,4 @@
-package com.troy.practice.nio;
+package com.troy.practice.io.mina;
 
 import org.apache.mina.core.service.IoAcceptor;
 import org.apache.mina.core.session.IdleStatus;

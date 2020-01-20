@@ -1,5 +1,7 @@
 package com.troy.practice.lock;
 
+import java.util.concurrent.locks.ReentrantLock;
+
 public class ReenterLockDemo {
 
     public static void main(String[] args) throws Exception{
@@ -35,9 +37,9 @@ class Phone implements Runnable{
         System.out.println(Thread.currentThread().getId() + " \t invoked sendEmail()");
     }
 
-
     @Override
     public void run() {
 
     }
+
 }
