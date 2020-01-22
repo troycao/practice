@@ -2,6 +2,7 @@ package com.troy.practice.io.nio;
 
 import java.nio.IntBuffer;
 import java.nio.channels.Channel;
+import java.nio.channels.Selector;
 
 public class BaseBuffer {
 
@@ -18,8 +19,6 @@ public class BaseBuffer {
         while (intBuffer.hasRemaining()){
             System.out.println(intBuffer.get());
         }
-
-        Channel channel = null;
 
     }
 }
